@@ -2,13 +2,14 @@
   "compilerOptions": {
     "lib": ["ESNext", "DOM"],
     "target": "ESNext",
-    "module": "ESNext",
+    "module": "esnext",
     "moduleDetection": "force",
     "jsx": "react-jsx",
     "jsxImportSource": "hono/jsx",
     "allowJs": true,
     "esModuleInterop": true,
     "moduleResolution": "bundler",
+    "noImplicitAny": false,
     "allowImportingTsExtensions": true,
     "verbatimModuleSyntax": true,
     "noEmit": true,
@@ -17,7 +18,8 @@
     "noFallthroughCasesInSwitch": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noPropertyAccessFromIndexSignature": false
+    "noPropertyAccessFromIndexSignature": false,
+    "outDir": "dist"
   },
   "exclude": ["node_modules", "docs"]
 }
